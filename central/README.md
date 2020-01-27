@@ -32,10 +32,10 @@ The device is now ready to be provisioned via DPS, and for that we need a couple
 ```
 2. If your screen is different, download the v2.1.0 release of the pre-built Azure IoT Central firmware for the MXChip from the [releases](https://github.com/Azure/iot-central-firmware/releases/tag/mxchip-v2.1.0) page on GitHub. 
 3. Connect the DevKit device to your development machine using a USB cable. In Windows, a file explorer window opens on a drive mapped to the storage on the DevKit device. For example, the drive might be called AZ3166 (D:).
-4. Drag the iotCentral.bin file onto the drive window. When the copying is complete, the device reboots with the new firmware.
+4. Drag the IoT Central .bin file onto the drive window. When the copying is complete, the device reboots with the new firmware.
 5. The device is now in access point (AP) mode. You can connect to this WiFi access point from your computer or mobile device.
 6. On your computer, phone, or tablet connect to the WiFi network name shown on the screen of the device. When you connect to this network, you don’t have internet access. This state is expected, and you’re only connected to this network for a short time while you configure the device.
-7. Open your web browser and navigate to http://192.168.0.1. The following web page displays:
+7. Open your web browser and navigate to http://192.168.0.1/start. The following web page displays:
 ![](images/configpage.png )  
 8. Enter the data for the **wifi** we will be using in the lab.
 9. The **PIN code** is displayed on the device screen.
