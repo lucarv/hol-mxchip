@@ -35,8 +35,10 @@ The device is now ready to be provisioned via DPS, and for that we need a couple
 4. Drag the IoT Central .bin file onto the drive window. When the copying is complete, the device reboots with the new firmware.
 5. The device is now in access point (AP) mode. You can connect to this WiFi access point from your computer or mobile device.
 6. On your computer, phone, or tablet connect to the WiFi network name shown on the screen of the device. When you connect to this network, you don’t have internet access. This state is expected, and you’re only connected to this network for a short time while you configure the device.
-7. Open your web browser and navigate to http://192.168.0.1/start. The following web page displays:
-![](images/configpage.png )  
+7. Open your web browser and navigate to http://192.168.0.1/start. The following web page displays:  
+
+![](images/configpage.png )   
+ 
 8. Enter the data for the **wifi** we will be using in the lab.
 9. The **PIN code** is displayed on the device screen.
 10. The connection details **Scope ID**, **Device ID**, and **Primary key** of your device.
