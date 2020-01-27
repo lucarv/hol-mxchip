@@ -11,5 +11,5 @@ Start the [IoT Central](central) Lab
 
 ## PART TWO - IoT Hub
 
-Start the [IoT Hub](iotpaas) Lab  
+Start the [IoT Hub](iotpaas/lab1) Lab  
 
