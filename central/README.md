@@ -1,8 +1,10 @@
-![](images/banner.png )  
+# IOT CENTRAL LAB  
+
+![](images/banner.png)  
 
 This hands-on lab is repurposed content from the [official documentation](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-connect-devkit).
 
-# Create an IoT Central Application  
+## Create an IoT Central Application  
 Navigate to the Azure IoT Central [Application Manager](https://aka.ms/iotcentral). Scroll down the page and press the button labelled _Create a custom app_.  
 Choose an appropriate name for the APP, select _Legacy Application_ as template and the subscription You will use. You can select the option for a free trial if You don't intend to revisit this lab in the future.  
 Press _Create_
@@ -20,7 +22,7 @@ The device is now ready to be provisioned via DPS, and for that we need a couple
 ![](images/dps.png )  
 
 
-# Provision the DevKit device
+## Provision the DevKit device
 
 1. We need to have the proper FW on the device. Depending on the HW version, you might already have the correct FW. If the device screen shows as below, You already have the correct FW, skip to point 5: 
 
@@ -38,13 +40,13 @@ The device is now ready to be provisioned via DPS, and for that we need a couple
 7. Open your web browser and navigate to http://192.168.0.1/start. The following web page displays:  
 
 ![](images/configpage.png )   
- 
+
 8. Enter the data for the **wifi** we will be using in the lab.
 9. The **PIN code** is displayed on the device screen.
 10. The connection details **Scope ID**, **Device ID**, and **Primary key** of your device.
 11. Press _Configure device_, which will transfer the configurations to the device. This action will also trigger the provisioning sequence, and after a minute or two your device should be sending telemetry to the APP.
 
-# Explore the template  
+## Explore the template  
 
 When the DevKit device restarts, the screen on the device shows:
 
