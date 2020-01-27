@@ -38,7 +38,7 @@ Storage account settings:
 
 ## Provision the DevKit device
 
-1. We need to have the proper FW on the device. In the previous lab we were using the IoT Central specific FW, we need now to change this into the generic bootloader, chich can be found [here](../mxchip/iotpaas.bin) 
+1. We need to have the proper FW on the device. In the previous lab we were using the IoT Central specific FW, we need now to change this into the generic bootloader, chich can be found [here](https://1drv.ms/u/s!AiMLTNM1CDMguJdh0Lk2Os3CArbMYQ?e=yWVnW6) 
 
 ```
     Connect HotSpot:
