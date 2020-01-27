@@ -13,3 +13,7 @@ Start the [IoT Central](central) Lab
 
 Start the [IoT Hub](iotpaas/lab1) Lab  
 
+## PART THREE - Adjacent Services
+
+Start the [IoT Hub](iotpaas/lab2) Lab 
+
