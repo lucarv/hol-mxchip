@@ -34,15 +34,6 @@ Go back to your Resource group and verify that the IoT Hub there
 3. Give the device a name, keep the other values as defaults. Press _Save_
 4. IoT Hub will create a symmetrical key. Once the device is created, copy the connection string, you will need it later.
 
-## Create Blob storage
-Add a Storage account to your Resource group
- 
-Storage account settings:   
-* Give the Storage account a name  
-* Select your Resource group  
-* Location North Europe  
-* Leave everything else with default settings  
-
 ## Provision the DevKit device
 
 1. We need to have the proper FW on the device. In the previous lab we were using the IoT Central specific FW, we need now to change this into the generic bootloader, chich can be found [here](https://1drv.ms/u/s!AiMLTNM1CDMguJdh0Lk2Os3CArbMYQ?e=icfCxd) 
@@ -97,4 +88,41 @@ Go into the portal and select your device, then choose the interface for sending
 
 ## Inspect the twin document
 
-Using the portal interface, look at the device twin document. Note that the current sample in the firmware does not make use of this powerful interface. There are many tutorials available online that can show you how to create your own FW. Time allowing, let's try [this](https://docs.microsoft.com/en-us/samples/azure-samples/mxchip-iot-devkit-state/sample/)
+Using the portal interface, look at the device twin document. Note that the current sample in the firmware does not make use of this powerful interface. There are many tutorials available online that can show you how to create your own FW. Time allowing, let's try [this](https://docs.microsoft.com/en-us/samples/azure-samples/mxchip-iot-devkit-state/sample/).
+In the meantime, we may hav enoticed that in the telmetry we are receiving, there is a field for device location, which is currently not set, and therefore we see:
+```
+    "DeviceLocation": "$twin.tags.location"
+```
+Let's edit the twin document in the portal by adding a tag as:
+```
+  "tags": {
+      "location": "orebro"
+      },
+```
+Add this right before the "properties" key. Save the document.  
+Verify that now the telemetry shows the device location tag !
+
+## Create Blob storage
+
+One of the most common patterns in IoT is cold data to storage, as we have seen in the reference architecture. We will reproduce that here by storing the telemetry received to a storage account.
+
+### Add a Storage account to your Resource group
+ 
+Storage account settings:   
+* Give the Storage account a name  
+* Select your Resource group  
+* Location North Europe  
+* Leave everything else with default settings  
+  
+Go into the newly created resource and add a container to your blob storage. Make sure you select "Container(anonymous.." as the access level.)
+
+### Route the telemetry to IoT Hub
+
+IoT Hub has a feature that allows to forward events to different ednpoints. Let's add a new route to our recently created container.  
+1. Go into the message routing menu in the IoT HUb menu and create a route to a Storage Endpoint. Select the container we have previously created.  
+![](images/routes.png)   
+2. Choose JSON as encoding.
+3. Leave the routing query as is
+4. Save
+5. Verify that the telemetry is now stored in the selected container (it might take a little time)
+
