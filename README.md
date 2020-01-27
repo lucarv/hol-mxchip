@@ -10,3 +10,6 @@ In this lab we will get acquainted with Azure's IoT SaaS offering, named IoT Cen
 Start the [IoT Central](central) Lab  
 
 ## PART TWO - IoT Hub
+
+Start the [IoT Hub](iotpaas) Lab  
+
