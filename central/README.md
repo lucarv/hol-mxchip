@@ -22,16 +22,14 @@ The device is now ready to be provisioned via DPS, and for that we need a couple
 
 # Provision the DevKit device
 
-1. We need to have the proper FW on the device. Depending on the HW version, you might already have the correct FW. If the device screen shows: 
- 
-```
-Connect HotSpot:
- AZ3166_??????  
- go-&gt; 192.168.0.1  
- PIN CODE xxxxx  
-```  
+1. We need to have the proper FW on the device. Depending on the HW version, you might already have the correct FW. If the device screen shows as below, You already have the correct FW, skip to point 5: 
 
-You already have the correct FW, skip to point 5.  
+```
+    Connect HotSpot:
+    AZ3166_??????  
+    go-> 192.168.0.1  
+    PIN CODE xxxxx  
+```
 2. If your screen is different, download the v2.1.0 release of the pre-built Azure IoT Central firmware for the MXChip from the [releases](https://github.com/Azure/iot-central-firmware/releases/tag/mxchip-v2.1.0) page on GitHub. 
 3. Connect the DevKit device to your development machine using a USB cable. In Windows, a file explorer window opens on a drive mapped to the storage on the DevKit device. For example, the drive might be called AZ3166 (D:).
 4. Drag the iotCentral.bin file onto the drive window. When the copying is complete, the device reboots with the new firmware.
