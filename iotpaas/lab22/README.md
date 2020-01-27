@@ -69,4 +69,4 @@ FROM
 2. Verify that telemetry is again stored in the container. 
 3. Verify the telemetry is stored in Cosmos DB  
 
-[BACK TO THE AGENDA](https://github.com/lucarv/connfac-lab/blob/master/agenda%20day%20one.md)  
+[HOT PATH](../lab23)  
