@@ -15,5 +15,5 @@ Start the [IOT HUB](iotpaas/lab1) Lab
 
 ## PART THREE - Adjacent Services
 
-Start the [ADJACENT SERVICES](iotpaas/lab2) Lab 
+Start the [ADJACENT SERVICES](iotpaas/lab21) Lab 
 
