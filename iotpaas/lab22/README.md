@@ -52,9 +52,9 @@ FROM
 
 ### Send Data to Blob
 
-1. In the previous lab, we had a route from IoT Hub to Blob that we disabled. If you go back to the Portal and re-enable it, You will notice that no messages reach Stream Analytics. One way of still keeping the pattern is to have Stream Analytics do the routing instead. So let's do that.
-2. Click the “Add Stream Output" button, select Blob Storage and setup it so telemetry is stored in the container we created in Lab 1. Choose to store the data in parquet format.  
-3. Create another Query as to select telemetry INTO the container
+In the previous lab, we had a route from IoT Hub to Blob that we disabled. If you would go back to the Portal and re-enable it, You would notice that no messages reach Stream Analytics (that is why we will NOT do it now). One way of still keeping the pattern is to have Stream Analytics do the routing instead. So let's do that.
+1. Click the “Add Stream Output" button, select Blob Storage and setup it so telemetry is stored in the container we created in Lab 1. Choose to store the data in parquet format.  
+2. Create another Query as to select telemetry INTO the container
 ```sql
 SELECT *
 INTO
