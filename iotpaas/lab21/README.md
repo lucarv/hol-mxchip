@@ -55,5 +55,5 @@ Let's create a Time Series Insights , which is a tool that is very much apprecia
 5. Choose from the dropdown
 6. Observe the Time Series graphs and heat maps.  
 
-[ADD MORE LAYERS](../lab22)  
+[NEXT LAB](../lab22)  
 

@@ -106,5 +106,5 @@ Let's edit the twin document in the portal by adding a tag as:
 Add this right before the "properties" key. Save the document.  
 Verify that now the telemetry shows the device location tag !
 
-[GO TO LAB 2.1](../lab21)
+[NEXT lab](../lab21)
 

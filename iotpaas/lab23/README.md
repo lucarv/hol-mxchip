@@ -69,4 +69,4 @@ FROM
 2. Verify that telemetry is again stored in the container. 
 3. Verify the telemetry is stored in Cosmos DB  
 
-[HOT PATH](../lab23)  
+[NEXT LAB](../lab24)  

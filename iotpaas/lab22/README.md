@@ -42,5 +42,5 @@ FROM
 
 ![](images/report.png)
 
-[NEXT LAB](../lab24)
+[NEXT LAB](../lab23)
 
