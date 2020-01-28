@@ -7,13 +7,13 @@ It uses the MXChip (AZ3166) device which has a handy interface and a number of s
 
 In this lab we will get acquainted with Azure's IoT SaaS offering, named IoT Central. We will create an app, connect a device to it using zero touch provisioning and play with the interface.
 
-Start the [IoT Central](central) Lab  
+Start the [IOT CENTRAL](central) Lab  
 
 ## PART TWO - IoT Hub
 
-Start the [IoT Hub](iotpaas/lab1) Lab  
+Start the [IOT HUB](iotpaas/lab1) Lab  
 
 ## PART THREE - Adjacent Services
 
-Start the [IoT Hub](iotpaas/lab2) Lab 
+Start the [ADJACENT SERVICES](iotpaas/lab2) Lab 
 
