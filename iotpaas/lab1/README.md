@@ -41,13 +41,6 @@ Now we will add a few consumer groups, which we will need later. On the IoT Hub 
 ## Provision the DevKit device
 
 1. We need to have the proper FW on the device. In the previous lab we were using the IoT Central specific FW, we need now to change this into the generic bootloader, chich can be found [here](https://github.com/microsoft/devkit-sdk/releases/download/1.6.5-release/devkit-getstarted-1.6.5.bin) 
-
-```
-    Connect HotSpot:
-    AZ3166_??????  
-    go-> 192.168.0.1  
-    PIN CODE xxxxx  
-```
 2. Connect the DevKit device to your development machine using a USB cable. In Windows, a file explorer window opens on a drive mapped to the storage on the DevKit device. For example, the drive might be called AZ3166 (D:).
 4. Drag the FW .bin file onto the drive window. When the copying is complete, the device reboots with the new firmware.  
 Press the B button. Press and release the reset button. See that the screen displays: 
