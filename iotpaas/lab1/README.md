@@ -40,7 +40,7 @@ Now we will add a few consumer groups, which we will need later. On the IoT Hub 
 
 ## Provision the DevKit device
 
-1. We need to have the proper FW on the device. In the previous lab we were using the IoT Central specific FW, we need now to change this into the generic bootloader, chich can be found [here](https://1drv.ms/u/s!AiMLTNM1CDMguJdh0Lk2Os3CArbMYQ?e=icfCxd) 
+1. We need to have the proper FW on the device. In the previous lab we were using the IoT Central specific FW, we need now to change this into the generic bootloader, chich can be found [here](https://github.com/microsoft/devkit-sdk/releases/download/1.6.5-release/devkit-getstarted-1.6.5.bin) 
 
 ```
     Connect HotSpot:
